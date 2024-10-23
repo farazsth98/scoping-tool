@@ -1,0 +1,72 @@
+{
+  "name": "scope-tool",
+  "displayName": "scope-tool",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "menus": {
+      "explorer/context": [
+        {
+          "when": "!explorerResourceIsFolder",
+          "command": "scope-tool.markForScoping",
+          "group": "navigation"
+        }
+      ]
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "scope-tool",
+          "title": "Scope Tool",
+          "icon": "media/scope-tool.svg"
+        }
+      ]
+    },
+    "views": {
+      "scope-tool": [
+        {
+          "id": "scopeTool",
+          "name": "Scope Tool",
+          "contextualTitle": "Files"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "scope-tool.markForScoping",
+        "title": "Mark for scoping"
+      },
+      {
+        "command": "scope-tool.estimateFile",
+        "title": "Estimate file"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
