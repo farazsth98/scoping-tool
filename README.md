@@ -5,9 +5,9 @@
 - Right click files in your workspace and choose the `Mark for Scoping` option.
 - Use the new `Scope Tool` panel on the activity bar to provide estimations for each file.
 
-![Marking a file for scoping](./media/markForScoping.png)
+![Marking a file for scoping](https://raw.githubusercontent.com/farazsth98/scoping-tool/refs/heads/master/media/markForScoping.png)
 
-![Estimating a file](./media/estimatingFile.png)
+![Estimating a file](https://raw.githubusercontent.com/farazsth98/scoping-tool/refs/heads/master/media/estimatingFile.png)
 
 ## Requirements
 
