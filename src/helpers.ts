@@ -17,7 +17,7 @@ export function getLoc(filepath: string): number {
 
 export function getScopeToolState(): ScopedFile[] {
 	// This access is safe because the state is created on extension activation,
-    // so it will always exist
+    // so it will always exist.
 	return ExposedContext.get().workspaceState.get(SCOPE_TOOL_STATE_KEY)!;
 }
 
