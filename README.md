@@ -11,20 +11,9 @@
 
 ## Requirements
 
-This tool uses `cloc` to 
+This tool uses `cloc` to fetch the lines of code in each file marked for scoping. Please ensure `cloc` is in your `PATH`.
 
-This tool has only been tested on Linux. It may work on MacOS and Windows.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This tool has only been tested on Linux. It may work on MacOS and Windows if `cloc` is in the PATH.
 
 ## List of things TODO
 
