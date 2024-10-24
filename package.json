@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.94.0"
   },
+  "publisher": "farazsth98",
   "repository": {
     "type": "git",
     "url": "https://github.com/farazsth98/scoping-tool.git"
