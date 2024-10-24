@@ -24,7 +24,17 @@
           "command": "scope-tool.markForScoping",
           "group": "navigation"
         }
-      ]
+      ],
+      "commandPalette": [
+            {
+                "command": "scope-tool.markForScoping",
+                "when": "false"
+            },
+            {
+                "command": "scope-tool.estimateFile",
+                "when": "false"
+            }
+        ]
     },
     "viewsContainers": {
       "activitybar": [
@@ -52,6 +62,10 @@
       {
         "command": "scope-tool.estimateFile",
         "title": "Estimate file"
+      },
+      {
+        "command": "scope-tool.clearWorkspace",
+        "title": "Scope Tool: Clear Workspace"
       }
     ]
   },

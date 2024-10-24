@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext) {
 			markForScoping(file.path);
 
 			scopeToolProvider.refresh();
-		},
+		}),
 		// `fileIndex` is the index of this scoped file in the scope tool state
 		vscode.commands.registerCommand('scope-tool.estimateFile', async (fileIndex) => {
 			const input = await vscode.window.showInputBox({
@@ -37,8 +37,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 				scopeToolProvider.refresh();
 			}
-		})
-	));
+		}),
+		vscode.commands.registerCommand('scope-tool.clearWorkspace', async (file) => {
+			setScopeToolState([]);
+
+			scopeToolProvider.refresh();
+		}),
+	);
 
 	vscode.window.registerTreeDataProvider(
 		'scopeTool',
